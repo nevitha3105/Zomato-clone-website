@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the best restaurants and food near you with BiteDash." />
+  <title>BiteDash — Food delivered with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="#top" aria-label="BiteDash home">
+        <span class="brand-mark">✦</span>
+        <span>Bite<span>Dash</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#restaurants">Discover</a>
+        <a href="#collections">Collections</a>
+        <a href="#offers">Offers <span class="new-pill">NEW</span></a>
+        <a href="#about">About us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="location-btn" type="button"><span>⌖</span> New York, NY <b>⌄</b></button>
+        <button class="login-btn" type="button">Log in</button>
+        <button class="signup-btn" type="button">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span></span> GOOD FOOD, GOOD MOOD</div>
+        <h1>Cravings, meet<br /><em>your match.</em></h1>
+        <p>Discover the best food and drinks in your neighborhood, delivered to your door.</p>
+        <form class="search-box" id="search-form">
+          <label class="search-location" for="search-input"><span>⌖</span></label>
+          <input id="search-input" type="search" placeholder="Search for restaurant, cuisine or a dish" autocomplete="off" />
+          <button type="submit">Search <span>→</span></button>
+        </form>
+        <div class="hero-meta"><span class="avatar-stack"><i>J</i><i>M</i><i>A</i></span><strong>10k+</strong> happy foodies ordering today</div>
+      </div>
+      <div class="hero-food hero-food-left">🍜</div>
+      <div class="hero-food hero-food-right">🍔</div>
+    </section>
+
+    <section class="quick-categories container" id="collections" aria-label="Browse by category">
+      <div class="section-heading compact"><div><span class="section-kicker">EXPLORE MORE</span><h2>What are you in the mood for?</h2></div><a href="#restaurants" class="text-link">View all <span>→</span></a></div>
+      <div class="category-row">
+        <button class="category active" data-category="all"><span>✨</span><b>All</b></button>
+        <button class="category" data-category="Pizza"><span>🍕</span><b>Pizza</b></button>
+        <button class="category" data-category="Burgers"><span>🍔</span><b>Burgers</b></button>
+        <button class="category" data-category="Sushi"><span>🍣</span><b>Sushi</b></button>
+        <button class="category" data-category="Healthy"><span>🥗</span><b>Healthy</b></button>
+        <button class="category" data-category="Desserts"><span>🍰</span><b>Desserts</b></button>
+        <button class="category" data-category="Coffee"><span>☕</span><b>Coffee</b></button>
+      </div>
+    </section>
+
+    <section class="restaurants container" id="restaurants">
+      <div class="section-heading"><div><span class="section-kicker">TOP PICKS NEAR YOU</span><h2>Popular restaurants</h2></div><div class="sort-select">Sort by <strong>Recommended</strong>⌄</div></div>
+      <div class="restaurant-grid" id="restaurant-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No tasty matches yet. Try a different search.</p>
+      <button class="outline-btn" id="load-more" type="button">Explore more restaurants <span>↓</span></button>
+    </section>
+
+    <section class="app-banner container" id="offers">
+      <div><span class="section-kicker">GOOD THINGS COME IN APP-SIZED PACKAGES</span><h2>Your favorites,<br /><em>one tap away.</em></h2><p>Get the BiteDash app and get 20% off your first order.</p><div class="store-buttons"><button> <small>Download on the</small><b>App Store</b></button><button>▶ <small>GET IT ON</small><b>Google Play</b></button></div></div><div class="phone-art"><div class="phone-screen"><span>✦</span><b>BiteDash</b><i>🍜</i><strong>Delivered with love.</strong></div></div>
+    </section>
+  </main>
+
+  <footer id="about"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">✦</span><span>Bite<span>Dash</span></span></a><p>© 2024 BiteDash. Made for food lovers.</p><div><a href="#about">Privacy</a><a href="#about">Terms</a><a href="#about">Help center</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
